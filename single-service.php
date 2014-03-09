@@ -46,7 +46,65 @@ get_header('service');?>
 		                 	<input type="email" name="email" value="" class="txt white requiredField email" placeholder="EMAIL">
 							<input type="submit" name="submit" value="Submit">
 		                	<input type="hidden" name="submitted" id="submitted" value="true">
+		                	 <div class="success-message">Email has been sent!</div>
+                                <div class="alert-message"></div>
+                                <div class="error-message">Email could not be delivered. Please try again later!</div>
 		                </form>
+		                <script type="text/javascript">
+		                 $(document).ready(function(){
+		                 	/* form processing */
+				            $("#contact-us").submit(function(){
+				                  
+				                  $(this).find('[placeholder]').each(function() {
+				                        
+				                        var input = $(this);
+				                        if (input.val() == input.attr('placeholder')) {
+				                              input.val('');
+				                        }
+				                        
+				                  });
+				                  
+				                  var processor = "<?php echo get_template_directory_uri(); ?>/contact.php",
+				                        str = $(this).serialize();
+				                  
+				                  $("#contact-us .success-message, #contact-us .alert-message, #contact-us .error-message ").hide();
+				                  
+				                  $.ajax({
+				                           
+				                     type: "POST",
+				                     url: processor,
+				                     data: str,
+				                     success: function(data) {
+				                              
+				                              //console.log(data);
+				                              $("#contact-form").append('<span class="feedback"></span>');
+				                                                   
+				                              if(data === 'OK') {
+				                              
+				                                    $("#contact-us .success-message").fadeIn();
+				                                    $("#contact-us").each(function(){
+				                                          this.reset();
+				                                    });
+				                                
+				                              } else if (data === 'ERROR') {
+				                              
+				                                    $("#contact-us .error-message").fadeIn();
+				                              
+				                              } else {
+				                                    
+				                                    $("#contact-us .alert-message").fadeIn().html( data );
+				                                    
+				                              }
+				                           
+				                     }
+				                           
+				                  });
+				            
+				                  return false;
+				                  
+				            });
+		                 });
+		                </script>
 		            </div>
 				</div>
 			</div>	

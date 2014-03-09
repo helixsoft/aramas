@@ -18,7 +18,7 @@
                 </div>
                 <div class="halfn">
                   <img src="<?php echo get_field('big_image')?>" />
-                  <a href="#" target="_blank" style="text-decoration:none;float:right;color:#ff0000;"><h4>Visit Website</h4></a>
+                  <a href="<?php echo get_field('website_link')?>" target="_blank" style="text-decoration:none;float:right;color:#ff0000;"><h4>Visit Website</h4></a>
                 </div>
               </div>
             </div>

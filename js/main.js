@@ -4570,7 +4570,7 @@ $(document).ready(function() {
       autoPlay: 3000, //Set AutoPlay to 3 seconds
  
       singleItem : true,
-        navigation : true,
+        navigation : false,
         pagination :false
   });
 });
