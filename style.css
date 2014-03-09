@@ -1342,6 +1342,7 @@ left: 137px;
 .navigation li a, .navigation li a:hover, .navigation li.active a, .navigation li.disabled {
     color: #000;
     text-decoration: none;
+    font-weight: bold;
 }
 .navigation li {
     display: inline;
