@@ -17,7 +17,7 @@ get_header('headername');
 			              while ($wp_query->have_posts()) : $wp_query->the_post();
 			              ?>
 			        <li class="slide">  
-			          <?php echo get_the_post_thumbnail($post->ID,'full-size');?>
+			          <a href='<?php echo site_url('/about_us/')?>'><?php echo get_the_post_thumbnail($post->ID,'full-size');?></a>
 			        </li>
 			        <?php
 			              endwhile;

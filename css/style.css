@@ -66,14 +66,14 @@ header .container nav ul{
 }
 header .container nav li{
 	list-style: none;
-	width: 57px;
+	width: 69px;
 	height: 57px;
 	float: left;
 	margin-left: 27px;
 }
 header .container nav a{
 	display: block;
-	width: 50px;
+	width: 69px;
 	height: 50px;
 	text-decoration: none;
 	text-align: center;

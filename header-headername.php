@@ -15,7 +15,7 @@
 <body> 
 <header>
 	<div class="container1">
-		<a href="http://ar.mizalabs.com/en"><div class="logo"></div></a>	
+		<a href="<?php echo site_url()?>"><div class="logo"></div></a>	
     <div class="title">
       <h1><?php echo ot_get_option( 'homepage_title' );?></h1>
       <p><?php echo ot_get_option( 'homepage_subtitle' );?></p>

@@ -108,26 +108,26 @@ header .title p {
     margin-left: 10px;
 }
 header .container1 nav {
-    width: 408px;
+    width: 458px;
     height: 57px;
     float: right;
 }
 header .container1 nav ul {
-    width: 450px;
+    width: 480px;
     height: 57px;
     margin: 0;
     padding: 0;
 }
 header .container1 nav li {
     list-style: none;
-    width: 57px;
+    width: 69px;
     height: 57px;
     float: left;
     margin-left: 27px;
 }
 header .container1 nav a {
     display: block;
-    width: 50px;
+    width: 69px;
     height: 50px;
     text-decoration: none;
     text-align: center;
@@ -456,7 +456,7 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
 }
 .scontainer nav ul li {
     width: 380px;
-    height: 215px;
+    height: 200px;
     list-style: none;
     float: left;
     margin-right: 31px;
