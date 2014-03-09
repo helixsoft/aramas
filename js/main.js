@@ -2928,8 +2928,8 @@ $(document).ready(function () {
         slider: ".slider",
         slide: ".slide",
         slideHed: ".slidehed",
-        nextSlide: ".next",
-        prevSlide: ".prev",
+        nextSlide: ".carousel-next",
+        prevSlide: ".carousel-prev",
         addPagination: false,
         addNav: false
     });

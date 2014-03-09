@@ -44,7 +44,7 @@ get_header('headername');
 			              ?>
 			        <?php if(get_the_post_thumbnail($post->ID,'full-size')) {?>
 			        <li class="slide">  
-			          <a href="http://ar.mizalabs.com/services/"><?php echo get_the_post_thumbnail($post->ID,'full-size');?></a>
+			          <a href="<?php echo site_url('/services/')?>"><?php echo get_the_post_thumbnail($post->ID,'full-size');?></a>
 			        </li>
 			        <?php } ?>
 			        <?php
@@ -63,7 +63,7 @@ get_header('headername');
   				</div>
 		</div>
 		<div class="c3">
-				<div class="slidewrap4">
+				<div class="slidewrap4" data-autorotate="5000">
 			      <ul class="slider">
 			       <?php 
 			              $temp_post = $post;
@@ -71,7 +71,7 @@ get_header('headername');
 			              while ($wp_query->have_posts()) : $wp_query->the_post();
 			              ?>
 			        <li class="slide">  
-			          <h1><a href="http://ar.mizalabs.com/faqs/" style="text-decoration:none;color:#111;"><?php the_title();?></a></h1>
+			          <h1><a href="<?php echo site_url('/faqs/')?>" style="text-decoration:none;color:#111;"><?php the_title();?></a></h1>
 			          <p><?php the_excerpt();?></p>
 			        </li>
 			        <?php
@@ -139,7 +139,7 @@ get_header('headername');
 			              while ($wp_query->have_posts()) : $wp_query->the_post();
 			              ?>
 			        <li class="slide">  
-			         <a href="http://ar.mizalabs.com/partners/"> <?php echo get_the_post_thumbnail($post->ID,'full-size');?></a>
+			         <a href="<?php echo site_url('/partners/')?>"> <?php echo get_the_post_thumbnail($post->ID,'full-size');?></a>
 			        </li>
 			        <?php
 			              endwhile;
@@ -160,7 +160,7 @@ get_header('headername');
 	</div>
 	<div class="right">
 		<div class="hedr">
-			<h1><a href="http://ar.mizalabs.com/blog/" style="text-decoration:none;color:#fff;"><?php _e('Latest Blog','aramas')?></a></h1>
+			<h1><a href="<?php echo site_url('/blog/')?>" style="text-decoration:none;color:#fff;"><?php _e('Latest Blog','aramas')?></a></h1>
 		</div>
 		<div class="content">
 			<div class="slidewrap">
@@ -170,21 +170,21 @@ get_header('headername');
 			              $wp_query = new WP_Query(); $wp_query->query('post_type=post');
 			              while ($wp_query->have_posts()) : $wp_query->the_post();
 			              ?>
-				<a href="http://ar.mizalabs.com/blog/" style="text-decoration:none;color:#111;font-size:20px;"><li class="slide">
+				<li class="slide">
 						<?php echo get_the_post_thumbnail($post->ID, 'full-size'); ?>	
 						<div class="po">
-						<h2><?php echo get_the_title();?></h2>
+						<h2><a href="http://ar.mizalabs.com/blog/" style="text-decoration:none;color:#111;font-size:20px;"><?php echo get_the_title();?></a></h2>
 						<p><?php the_excerpt();?></p>
 						</div>
-					</li></a>
+					</li>
 				 <?php
 			              endwhile;
 			              $post = $temp_post;
 			            ?> 	
 				</ul>
 				<ul class="slidecontrols">
-					<li><a href="#" class="next"></a></li>
-					<li><a href="#" class="prev"></a></li>
+					<li><a href="#carousel-1-0" class="carousel-prev"></a></li>
+					<li><a href="#carousel-1-0" class="carousel-next"></a></li>
 				</ul>
 			</div>
 		</div>

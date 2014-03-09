@@ -923,23 +923,34 @@ ul.slider {
 .events {
     font: 400 11px/1.4 arial, helvetica, sans-serif;
 }
+.slidewrap{
+    height: 400px;
+}
 .slidewrap .slidecontrols {
-    width: auto;
-    position: relative;
-    top: -22px;
-    left: 254px;
+width: auto;
+position: relative;
+top: 22px;
+left: 137px;
 }
 .slidewrap .slidecontrols li {
     list-style: none;
     float: left;
+    margin-right: 20px;
 }
-.slidewrap .slidecontrols li a.next {
+.slidewrap .slidecontrols li a.carousel-next {
     text-decoration: none;
-    background:  url(images/blg1.png);
-}
-.slidewrap .slidecontrols li a.prev {
-    text-decoration: none;
+    height: 10px;
+    width: 7px;
+    display: block;
     background:  url(images/blg2.png);
+    
+}
+.slidewrap .slidecontrols li a.carousel-prev {
+    text-decoration: none;
+      height: 10px;
+    width: 7px;
+    display: block;
+    background:  url(images/blg1.png);
 }
 .slidewrap1 .slidecontrols {
     width: auto;
