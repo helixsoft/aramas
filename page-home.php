@@ -131,29 +131,19 @@ get_header('headername');
 			</div>
 			<div class="div"></div>
 			<div class="col">
-			<div class="slidewrap4" data-autorotate="4000">
-			      <ul class="slider">
+				<div id="owl-demo3" class="owl-carousel owl-theme">
 			       <?php 
 			              $temp_post = $post;
 			              $wp_query = new WP_Query(); $wp_query->query('post_type=partner');
 			              while ($wp_query->have_posts()) : $wp_query->the_post();
 			              ?>
-			        <li class="slide">  
-			         <a href="<?php echo site_url('/partners/')?>"> <?php echo get_the_post_thumbnail($post->ID,'full-size');?></a>
-			        </li>
+			        <div class="item">  
+			         <a href="<?php echo site_url('/partners/')?>"> <?php echo get_the_post_thumbnail($post->ID, 'full-size'); ?></a>
+			        </div>
 			        <?php
 			              endwhile;
 			              $post = $temp_post;
 			            ?> 
-			      </ul>
-			      <ul class="slidecontrols" role="navigation">  
-			        <li role="presentation">
-			          <a href="#carousel-4-0" class="as-next"></a>
-			        </li> 
-			          <li role="presentation">
-			            <a href="#carousel-4-0" class="as-prev"></a>
-			          </li>
-			        </ul>
   				</div>
 			</div>
 		</div>
@@ -173,7 +163,7 @@ get_header('headername');
 				<li class="slide">
 						<?php echo get_the_post_thumbnail($post->ID, 'full-size'); ?>	
 						<div class="po">
-						<h2><a href="http://ar.mizalabs.com/blog/" style="text-decoration:none;color:#111;font-size:20px;"><?php echo get_the_title();?></a></h2>
+						<h2><a href="<?php echo site_url('/blog/')?>" style="text-decoration:none;color:#111;font-size:20px;"><?php echo get_the_title();?></a></h2>
 						<p><?php the_excerpt();?></p>
 						</div>
 					</li>
