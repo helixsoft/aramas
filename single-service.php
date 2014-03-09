@@ -15,9 +15,9 @@ get_header('service');?>
 				</div>
 				<div style="width:500px">
 				<div class="slidewrap09">
-					<ul class="slidecontrols" style="margin-left:329px;margin-top:20px;position:relative;top:-20px;">
-						<li style="float:left;text-decoration:none;"><a class="move current" href="#" data-key="0">Brands</a></li><li style="float:left"><a>&nbsp;/&nbsp;</a></li>
-						<li style="float:left;text-decoration:none;"><a class="move" href="#" data-key="1">Testimonials</a></li>
+					<ul class="slidecontrols" style="margin-left:442px;margin-top:20px;position:relative;top:-12px;"><!--339 -->
+						<li style="float:left;text-decoration:none;"><a class="move current" href="#" data-key="0">Brands</a></li><!--<li style="float:left"><a>&nbsp;/&nbsp;</a></li>-->
+						<!--<li style="float:left;text-decoration:none;"><a class="move" href="#" data-key="1">Testimonials</a></li>-->
 					</ul>
 					<div class="bot">		
 						<ul class="slider" id="sliderName">
@@ -25,7 +25,7 @@ get_header('service');?>
 								<?php get_template_part('slider-partner')?> 
 							</li>
 							<li class="slide">	
-								<p style="margin-left:10px;">In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien.</p>
+								<p style="margin-left:10px;"><?php echo get_field('testimonials')?></p>
 							</li>			
 						</ul>
 					</div>
