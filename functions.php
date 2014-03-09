@@ -51,7 +51,7 @@ function ar_setup() {
 add_action( 'after_setup_theme', 'ar_setup' );
 
 function custom_excerpt_length( $length ) {
-		return 15;
+		return 45;
 	}
 	add_filter( 'excerpt_length', 'custom_excerpt_length',999 );
 	
@@ -620,4 +620,6 @@ function example_ajax_request() {
 add_action( 'wp_ajax_example_ajax_request', 'example_ajax_request' );
 // If you wanted to also use the function for non-logged in users (in a theme for example)
 add_action( 'wp_ajax_nopriv_example_ajax_request', 'example_ajax_request' );
+
 ?>
+

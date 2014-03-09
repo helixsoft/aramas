@@ -255,7 +255,7 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
 .tcontainer .left .c5 .col p {
     font-size: 12px;
     color: #fff;
-    margin-top: -10px;
+    margin-top: -7px;
     margin-left: 5px;
 }
 .tcontainer .left .c5 .col .slide img {
@@ -482,6 +482,7 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
     border-right: 1px solid #959595;
     margin-top: 0px;
     float: left;
+    margin-top: 20px;
 }
 .scontainer .content .left .top {
     width: 97%;
@@ -512,6 +513,7 @@ border: 1px solid #9f9f9f;
     margin-top: 0;
     float: left;
     margin-left: 20px;
+     margin-top: 20px;
 }
 .scontainer .content .right .up {
     color: #9a8e55;
@@ -1281,7 +1283,7 @@ left: 137px;
     position: fixed;
     bottom: 0;
     right: 0;
-    margin-top: 120px;
+    margin-top: 113px;
 }
 .fancybox-lock .fancybox-overlay {
     overflow: auto;
@@ -1357,7 +1359,7 @@ left: 137px;
     height: 28px;
     float: right;
     text-align: right;
-    margin-top: -24px;
+    margin-top: -4px;
     margin-bottom: 10px;
 }
 .navigation {
@@ -1813,7 +1815,7 @@ left: 137px;
 #owl-demo2 .owl-controls .owl-buttons div.owl-prev{
     position: relative;
     left: -590px;
-    top: -150px;
+    top: -174px;
     background-color:#fff; 
     background: transparent url(images/gui/carousel_nav.png) no-repeat 0 0;
     background-position: 0 0;
@@ -1823,7 +1825,7 @@ left: 137px;
 #owl-demo2 .owl-controls .owl-buttons div.owl-next{
     position: relative;
     right: -590px;
-    top: -150px;
+    top: -174px;
      background-color:#fff; 
      background: transparent url(images/gui/carousel_nav.png) no-repeat 0 0;
      background-position: -19px 0;
