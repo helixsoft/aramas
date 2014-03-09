@@ -1104,6 +1104,7 @@ left: 137px;
     font-size: 16px;
     padding-right: 20px;
     margin-top: 2px;
+    text-align: center;
 }
 .full .halfn {
     float: left;
@@ -1804,6 +1805,11 @@ left: 137px;
      text-indent: -9999px;
      opacity: 1;
 }
+#owl-demo2{
+    top: 55px;
+    width: 1100px;
+    margin: 0 auto;
+}
 #owl-demo2 .item{ 
      padding: 0px 20px;
 }
@@ -1814,8 +1820,8 @@ left: 137px;
 }
 #owl-demo2 .owl-controls .owl-buttons div.owl-prev{
     position: relative;
-    left: -590px;
-    top: -174px;
+    left: -560px;
+    top: -160px;
     background-color:#fff; 
     background: transparent url(images/gui/carousel_nav.png) no-repeat 0 0;
     background-position: 0 0;
@@ -1824,8 +1830,8 @@ left: 137px;
 }
 #owl-demo2 .owl-controls .owl-buttons div.owl-next{
     position: relative;
-    right: -590px;
-    top: -174px;
+    right: -560px;
+    top: -160px;
      background-color:#fff; 
      background: transparent url(images/gui/carousel_nav.png) no-repeat 0 0;
      background-position: -19px 0;

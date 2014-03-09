@@ -51,7 +51,7 @@ function ar_setup() {
 add_action( 'after_setup_theme', 'ar_setup' );
 
 function custom_excerpt_length( $length ) {
-		return 45;
+		return 35;
 	}
 	add_filter( 'excerpt_length', 'custom_excerpt_length',999 );
 	
