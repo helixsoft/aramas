@@ -14,7 +14,9 @@
               <div class="full">
                 <div class="half">
                   <h1>Learn More</h1>
+                  <div class="move_down">
                   <p><?php echo the_content();?></p>
+                  </div>
                 </div>
                 <div class="halfn">
                   <img src="<?php echo get_field('big_image')?>" />
