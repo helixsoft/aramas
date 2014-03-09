@@ -42,9 +42,11 @@ get_header('headername');
 			              $wp_query = new WP_Query(); $wp_query->query('post_type=service');
 			              while ($wp_query->have_posts()) : $wp_query->the_post();
 			              ?>
+			        <?php if(get_the_post_thumbnail($post->ID,'full-size')) {?>
 			        <li class="slide">  
 			          <a href="http://ar.mizalabs.com/services/"><?php echo get_the_post_thumbnail($post->ID,'full-size');?></a>
 			        </li>
+			        <?php } ?>
 			        <?php
 			              endwhile;
 			              $post = $temp_post;
