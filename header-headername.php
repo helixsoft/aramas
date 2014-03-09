@@ -16,7 +16,7 @@
 <header>
 	<div class="container1">
 		<a href="<?php echo site_url()?>"><div class="logo"></div></a>	
-    <div class="title">
+    <div class="title home">
       <h1><?php echo ot_get_option( 'homepage_title' );?></h1>
       <p><?php echo ot_get_option( 'homepage_subtitle' );?></p>
     </div>	

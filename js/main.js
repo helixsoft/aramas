@@ -2972,10 +2972,7 @@ $(document).ready(function () {
     $(".slidewrap20").carousel({
         slider: ".slider",
         slide: ".slide",
-        slideHed: ".slidehed",
-        nextSlide: ".next",
-        prevSlide: ".prev",
-        addPagination: false,
+        addPagination: true,
         addNav: false
     });
     $('.slidewrap09').carousel({
@@ -2985,6 +2982,18 @@ $(document).ready(function () {
         prevSlide: '.prev',
         addPagination: false,
         addNav: false
+    });
+    $(".move").click(function (event) {
+        event.preventDefault();
+        var her = $(this);
+        $key = her.attr('data-key');
+        $('.move').each(function () {
+            $(this).removeClass('current');
+        });
+        her.addClass('current');
+        $('.bot .slide').trigger('carouselmove', {
+            moveTo: -($key * 100)
+        });
     });
     $(".button").click(function () {
         var e = $(this);
