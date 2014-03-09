@@ -133,12 +133,12 @@ get_header('headername');
 			<div class="col">
 				<div id="owl-demo3" class="owl-carousel owl-theme">
 			       <?php 
-			              $temp_post = $post;
+			              global $post;$temp_post = $post;
 			              $wp_query = new WP_Query(); $wp_query->query('post_type=partner');
 			              while ($wp_query->have_posts()) : $wp_query->the_post();
 			              ?>
 			        <div class="item">  
-			         <a href="<?php echo site_url('/partners/')?>"> <?php echo get_the_post_thumbnail($post->ID, 'full-size'); ?></a>
+			         <a href="<?php echo site_url('/partners/')?>"> <img src="<?php echo get_field('home_page_image',$post->ID); ?>"></a>
 			        </div>
 			        <?php
 			              endwhile;

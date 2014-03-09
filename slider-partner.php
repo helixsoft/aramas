@@ -9,7 +9,7 @@
           $thumb_id = get_post_thumbnail_id();
           $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
           ?>
-          <div class="item"><a class="fancybox sds" href="#inline<?php echo the_ID();?>"><p><?php the_title();?></p><img src="<?php echo $thumb_url[0];?>" /></a>
+          <div class="item"><a class="fancybox sds" href="#inline<?php echo the_ID();?>"><img src="<?php echo $thumb_url[0];?>" /></a>
             <div id="inline<?php echo the_ID();?>" style="width:800px!important;height:auto;display: none;">
               <div class="full">
                 <div class="half">

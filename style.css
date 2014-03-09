@@ -376,7 +376,9 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
     color: #9a8e55;
     margin-left: 20px;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 42px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 .pcontent .top h1 {
     font-weight: 400;
@@ -385,7 +387,9 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
 }
 .content .top .left p {
     margin-left: 20px;
-    font-family: "Nexa Light"}
+    font-family: "Nexa Light";
+    margin-top: 0px;
+}
 .content .top .right {
     width: 590px;
     height: 100%;
@@ -400,23 +404,32 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
     margin-left: 20px;
     font-family: "Nexa Bold";
     font-weight: bold;
-    font-size: 35px;
+    font-size: 42px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 .content .top .right p {
     margin-left: 20px;
-    font-family: "Nexa Light"}
+    font-family: "Nexa Light";
+    margin-top: 0px;
+}
 .content .bottom {
     margin: 0 auto;
     width: 100%;
     height: auto;
 }
 .content .bottom h1 {
-    margin-top: 200px;
-    font-size: 20px;
+    margin-top: 170px;
+    font-size: 42px;
+    margin-bottom: 0px;
 }
 .content .bottom img {
     float: right;
     margin-bottom: 20px;
+}
+.content .bottom p{
+    margin-top: 0px;
+    margin-bottom: 8px;
 }
 .scontainer {
     width: 1200px;
@@ -743,7 +756,7 @@ input[type=date], input[type=datetime-local], input[type=datetime], input[type=e
     height: 100%;
     float: left;
     //padding-left: 20px;
-    margin-top: 30px;
+    margin-top: 67px;
     text-align: center;
     margin-left: 48px;
 }
@@ -1110,7 +1123,7 @@ left: 137px;
     font-size: 16px;
     padding-right: 20px;
     margin-top: 2px;
-    text-align: center;
+    text-align: left;
 }
 .move_down{
     margin-top: 20px;
@@ -1793,7 +1806,7 @@ left: 137px;
     text-decoration: capitalize;
 }
 #owl-demo .owl-wrapper-outer{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 #owl-demo .owl-controls{
     margin-top: 0px;
@@ -1852,17 +1865,17 @@ left: 137px;
      opacity: 1;
 }
 #owl-demo3{ 
-     width: 120px;
+     width: 200px;
   height: 80px;
   margin: 0 auto;
 }
 #owl-demo3 .item{ 
-     width: 120px;
+     width: 200px;
   height: 80px;
 }
 #owl-demo3 .item img{
   display: block;
-  width: 120px;
+  width: 200px;
   height: 80px;
 }
 #owl-demo3 .owl-controls .owl-buttons div.owl-prev{
