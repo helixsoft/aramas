@@ -1916,6 +1916,9 @@ input:focus{
 textarea:focus{
     border: 1px solid #9a8e55;
 }
+.black{
+    color: #000;
+}
 @media screen and (max-width:1024px){
     header .container1{
         width: 1000px;
