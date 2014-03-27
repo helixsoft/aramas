@@ -16,7 +16,7 @@
 <header>
 	<div class="container1">
 		<a href="http://ar.mizalabs.com/en"><div class="logo"></div></a>		
-    <div class="title">
+    <div class="title blog">
       <h1><?php _e('Blog','aramas')?></h1>
     </div>
 		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ,'container' => 'nav') ); ?>
