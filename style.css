@@ -209,8 +209,10 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
 .tcontainer .left .c3 p {
     font-size: 14px;
     margin-left: 10px;
-    margin-top: -12px;
+    margin-top: -35px;
     word-wrap: break-word;
+    height: 52px;
+    overflow: hidden;
 }
 .tcontainer .left .c4 {
     width: 880px;
@@ -1920,8 +1922,8 @@ left: 137px;
     font-size:12px;
     letter-spacing:1px;
     text-align: left;
-    margin-left: 20px;
-    color: #fff;
+    margin-left: 0px;
+    color: #000;
 }
 
 input:focus{
