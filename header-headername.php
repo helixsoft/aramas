@@ -10,7 +10,7 @@
   <title><?php wp_title( '|', true, 'right' ); ?></title>
    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/css/style.css'); ?>" type="text/css" media="(min-width:320px)" />  
+  <link rel="stylesheet" href="<?php echo THEMEROOT ?>/style.css" type="text/css"  />  
   <?php wp_head();?>
 <body> 
 <header>

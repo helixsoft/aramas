@@ -174,7 +174,6 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
 .tcontainer .left .c2 {
     width: 440px;
     height: 225px;
-    background: url(images/c2.png);
     float: left;
     margin-left: 12px;
     position: relative;
@@ -217,7 +216,6 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
 .tcontainer .left .c4 {
     width: 880px;
     height: 100px;
-    background: #fff;
     position: relative;
     float: left;
     bottom: 75px;
@@ -1935,9 +1933,275 @@ textarea:focus{
 .black{
     color: #000;
 }
+/*
 @media screen and (max-width:1024px){
     header .container1{
         width: 1000px;
     }
 }
+*/
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+    header .container1{
+        width: 1000px;
+    }
+    header .title.home {
+        width: 400px;
+        height: 81px;
+        padding-top: 32px;
+    }
+    header .title h1{
+        font-size: 35px;
+    }
+    header .title p{
+        font-size: 20px;
+    }
+    .tcontainer{
+        width: 1000px;
+    }
+    .tcontainer .left{
+        width: 880px;
+        float: none;
+        margin: 22px auto;
+    }
+    .tcontainer .right {
+        width: 310px;
+        float: none;
+        margin: 0px auto;
+    }
+    footer .container{
+        width: 1000px;
+    }
+    footer .container nav{
+        width: 721px;
+    }
+    .right .hedr {
+        width: 310px;
+        height: 35px;
+        position: relative;
+        float: left;
+        top: -52px;
+    }
+    .right .content {
+        position: relative;
+        top: -52px;
+        float: left;
+    }
+    header .title {
+        width: 400px;
+        height: 46px;
+        padding-top: 67px;
+    }
+    .acontainer,.acontainer .content{
+        width: 1000px;
+    }
+    .content .top .left,.content .top .right{
+        width: 490px;
+        height: 158px;
+    }
+    .content .bottom{
+        float: left;
+    }
+    .content .bottom h1{
+        margin-top: 10px;
+    }
+    .scontainer{
+        width: 1000px;
+    }
+    .scontainer nav{
+        width: 800px;
+        height: 800px;
+        margin: 20px auto;
+    }
+    .scontainer nav ul li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .pcontainer,.pcontainer .pcontent{
+        width: 1000px;
+    }
+    #owl-demo2 {
+        width: 900px;
+    }
+    #owl-demo2 .owl-controls .owl-buttons div.owl-prev{
+        left: -450px;
+    }
+    #owl-demo2 .owl-controls .owl-buttons div.owl-next{
+        right: -450px;
+    }
+    header .title.blog{
+        width: 400px;
+        height: 45px;
+        padding-top: 55px;
+    }
+    .bcontainer{
+        width: 1000px;
+    }
+    .blogcontent .bleft{
+        width: 376px !important;
+        overflow: auto !important;
+    }
+    .blogcontent .bleft .jspContainer,.blogcontent .bleft .jspContainer .jspPane{
+        width: 376px !important;
+    }
+    .bleft .blogimg:nth-child(2n+1){
+        margin-left: 10px;
+    }
+    .ccontainer,.fcontainer{
+        width: 1000px;
+    }
+    .contact-body-left{
+        width: 620px;
+    }
+    .contact-form{
+        width: 620px;
+    }
+    .contact-form textarea{
+        width: 606px;
+    }
+}
 
+@media screen and (min-width: 600px) and (max-width: 1023px){
+    header .container1 {
+    width: 580px;
+    }
+    header .title.home {
+        width: 220px;
+        height: 40px;
+        padding-top: 60px;
+    }
+    header .title h1{
+        font-size: 20px;
+    }
+    header .title p{
+        font-size: 12px;
+    }
+    header .container1 nav{
+        width: 240px;
+    }
+    .tcontainer{
+        width: 580px;
+    }
+    .tcontainer .left{
+        width: 428px;
+        float: none;
+        margin: 22px auto;
+    }
+    .tcontainer .left .c1,.tcontainer .left .c2,.tcontainer .left .c3,.tcontainer .left .c4,.tcontainer .left .c4 .l,.tcontainer .left .c4 .r{
+        width: 428px;
+    }
+    .tcontainer .left .c2{
+        margin-top: 8px;
+    }
+    .tcontainer .left .c3{
+        margin-top: 85px;
+    }
+    .tcontainer .left .c5{
+        display: none;
+    }
+    .tcontainer .right {
+        width: 310px;
+        float: none;
+        margin: 239px auto 0 auto;
+    }
+    footer .container{
+        width: 580px;
+    }
+    footer .container nav,footer .container nav ul{
+        width: 301px;
+    }
+    footer .container nav ul li{
+        margin-left: 1px;
+    }
+    footer .container nav ul li a{
+        padding: 0 6px;
+        font-size: 14px;
+    }
+    footer .container .rights{
+        width: 279px;
+        font-size: 13px;
+    }
+    .right .hedr {
+        width: 310px;
+        height: 35px;
+        position: relative;
+        float: left;
+        top: -52px;
+    }
+    .right .content {
+        position: relative;
+        top: -52px;
+        float: left;
+    }
+    header .title {
+        width: 400px;
+        height: 46px;
+        padding-top: 67px;
+    }
+    .acontainer,.acontainer .content{
+        width: 1000px;
+    }
+    .content .top .left,.content .top .right{
+        width: 490px;
+        height: 158px;
+    }
+    .content .bottom{
+        float: left;
+    }
+    .content .bottom h1{
+        margin-top: 10px;
+    }
+    .scontainer{
+        width: 1000px;
+    }
+    .scontainer nav{
+        width: 800px;
+        height: 800px;
+        margin: 20px auto;
+    }
+    .scontainer nav ul li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .pcontainer,.pcontainer .pcontent{
+        width: 1000px;
+    }
+    #owl-demo2 {
+        width: 900px;
+    }
+    #owl-demo2 .owl-controls .owl-buttons div.owl-prev{
+        left: -450px;
+    }
+    #owl-demo2 .owl-controls .owl-buttons div.owl-next{
+        right: -450px;
+    }
+    header .title.blog{
+        width: 400px;
+        height: 45px;
+        padding-top: 55px;
+    }
+    .bcontainer{
+        width: 1000px;
+    }
+    .blogcontent .bleft{
+        width: 376px !important;
+        overflow: auto !important;
+    }
+    .blogcontent .bleft .jspContainer,.blogcontent .bleft .jspContainer .jspPane{
+        width: 376px !important;
+    }
+    .bleft .blogimg:nth-child(2n+1){
+        margin-left: 10px;
+    }
+    .ccontainer,.fcontainer{
+        width: 1000px;
+    }
+    .contact-body-left{
+        width: 620px;
+    }
+    .contact-form{
+        width: 620px;
+    }
+    .contact-form textarea{
+        width: 606px;
+    }
+}
