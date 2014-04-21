@@ -2091,6 +2091,7 @@ textarea:focus{
     }
     .tcontainer .left .c2{
         margin-top: 8px;
+        margin-left: 0px;
     }
     .tcontainer .left .c3{
         margin-top: 85px;
@@ -2114,11 +2115,17 @@ textarea:focus{
     }
     footer .container nav ul li a{
         padding: 0 6px;
-        font-size: 14px;
+        font-size: 10px;
     }
     footer .container .rights{
         width: 279px;
-        font-size: 13px;
+        font-size: 10px;
+        text-align: right;
+    }
+    footer .container .rights h3{
+        width: 279px;
+        font-size: 10px !important;
+        margin-top: 18px;
     }
     .right .hedr {
         width: 310px;
@@ -2133,75 +2140,313 @@ textarea:focus{
         float: left;
     }
     header .title {
-        width: 400px;
-        height: 46px;
-        padding-top: 67px;
+        width: 220px;
+        height: 32px;
+        padding-top: 81px;
     }
     .acontainer,.acontainer .content{
-        width: 1000px;
+        width: 580px;
     }
     .content .top .left,.content .top .right{
         width: 490px;
         height: 158px;
+        float: none;
+        margin: 0 auto;
     }
     .content .bottom{
-        float: left;
+        float: none;
+        padding-bottom: 100px;
     }
     .content .bottom h1{
         margin-top: 10px;
     }
     .scontainer{
-        width: 1000px;
+        width: 580px;
     }
     .scontainer nav{
-        width: 800px;
-        height: 800px;
-        margin: 20px auto;
+        width: 580px;
+        height: 1400px;
+        margin: 40px auto;
     }
     .scontainer nav ul li{
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 10px auto;
     }
     .pcontainer,.pcontainer .pcontent{
-        width: 1000px;
+        width: 580px;
     }
     #owl-demo2 {
-        width: 900px;
+        width: 400px;
     }
     #owl-demo2 .owl-controls .owl-buttons div.owl-prev{
-        left: -450px;
+        left: -250px;
     }
     #owl-demo2 .owl-controls .owl-buttons div.owl-next{
-        right: -450px;
+        right: -250px;
     }
     header .title.blog{
-        width: 400px;
-        height: 45px;
-        padding-top: 55px;
+        width: 200px;
+        height: 27px;
+        padding-top: 74px;
     }
     .bcontainer{
-        width: 1000px;
+        width: 580px;
     }
     .blogcontent .bleft{
-        width: 376px !important;
+        width: 219px !important;
         overflow: auto !important;
     }
     .blogcontent .bleft .jspContainer,.blogcontent .bleft .jspContainer .jspPane{
-        width: 376px !important;
+        width: 219px !important;
     }
-    .bleft .blogimg:nth-child(2n+1){
-        margin-left: 10px;
+    .bleft .blogimg{
+        float: none;
+        margin: 0 auto;
     }
+    .blogcontent .bright{
+        width: 350px !important;
+        overflow: auto !important;
+    }
+    .blogcontent .bright .jspContainer,.blogcontent .bright .jspContainer .jspPane{
+        width: 350px !important;
+    }
+    .bright .bimage,.bright .bartist,.bright .bcontent{
+        width: 300px;
+    }
+    .bright .bimage img{
+        max-width: 100%;
+        height: auto;
+    } 
     .ccontainer,.fcontainer{
-        width: 1000px;
+        width: 580px;
     }
     .contact-body-left{
-        width: 620px;
+        width: 580px;
     }
     .contact-form{
-        width: 620px;
+        width: 560px;
     }
     .contact-form textarea{
-        width: 606px;
+        width: 395px;
+    }
+    .contact-form input[type=submit]{
+        float: none;
+    }
+    .contact-body-right{
+        display: none;
+    }
+    .fcontainer .content .heading h4{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 599px){
+    header .container1 {
+    width: 300px;
+    }
+    header .title{
+        display: none;
+    }
+    header .container1 nav{
+        display: none;
+    }
+    .tcontainer{
+        width: 300px;
+    }
+    .tcontainer .left{
+        width: 300px;
+        float: none;
+        margin: 22px auto;
+    }
+    .tcontainer .left .c1,.tcontainer .left .c2,.tcontainer .left .c3,.tcontainer .left .c4,.tcontainer .left .c4 .l,.tcontainer .left .c4 .r{
+        width: 300px;
+    }
+    .tcontainer .left .c1 ul li a,.tcontainer .left .c2 ul li a{
+        outline: none;
+    }
+    .tcontainer .left .c1 ul li a img,.tcontainer .left .c2 ul li a img{
+        outline-color: #fff;
+    }
+    .tcontainer .left .c1{
+        height: auto;
+        -webkit-box-shadow:none;
+        -moz-box-shadow: none;
+        box-shadow:none;
+        float: none;
+    }
+    .tcontainer .left .c2{
+        margin-top: 8px;
+        margin-left: 0px;
+         height: auto;
+        -webkit-box-shadow:none;
+        -moz-box-shadow: none;
+        box-shadow:none;
+        float: none;
+    }
+    .tcontainer .left .c3{
+        margin-top: 85px;
+         height: auto;
+        -webkit-box-shadow:none;
+        -moz-box-shadow: none;
+        box-shadow:none;
+        float: none;
+    }
+    .tcontainer .left .c4{
+         height: auto;
+        float: none;
+    }
+    .tcontainer .left .c4 .l h1{
+        font-size: 30px;
+    }
+    .tcontainer .left .c4 .r p{
+        font-size: 12px;
+    }
+    .tcontainer .left .c5{
+        display: none;
+    }
+    .tcontainer .right {
+        width: 300px;
+        float: none;
+        margin: 239px auto 0 auto;
+    }
+    footer{
+        position: static;
+    }
+    footer .container{
+        width: 300px;
+    }
+    footer .container nav,footer .container nav ul{
+        width: 300px;
+    }
+    footer .container nav ul li{
+        margin-left: 1px;
+    }
+    footer .container nav ul li a{
+        padding: 0 6px;
+        font-size: 10px;
+    }
+    footer .container .rights{
+       display: none;
+    }
+    .right .hedr {
+        width: 300px;
+        height: 35px;
+        position: relative;
+        float: left;
+        top: -52px;
+    }
+    .right .content {
+        position: relative;
+        top: -52px;
+        float: left;
+        width: 300px;
+        height:auto;
+    }
+    .right .content img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .acontainer,.acontainer .content{
+        width: 300px;
+    }
+    .content .top .left,.content .top .right{
+        width: 300px;
+        height: auto;
+        float: none;
+        margin: 0 auto;
+    }
+    .content .bottom{
+        float: none;
+        padding-bottom: 100px;
+    }
+    .content .bottom h1{
+        margin-top: 10px;
+    }
+    .scontainer{
+        width: 300px;
+    }
+    .scontainer nav{
+        width: 300px;
+        height: 1100px;
+        margin: 40px auto;
+    }
+    .scontainer nav ul li{
+        margin: 0px auto;
+        width: 300px;
+        height: auto;
+        float: none;
+         -webkit-box-shadow:none;
+        -moz-box-shadow: none;
+        box-shadow:none;
+    }
+    .over{
+        background: #fff;
+    }
+    .scontainer nav ul li a img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    .pcontainer,.pcontainer .pcontent{
+        width: 300px;
+    }
+    #owl-demo2 {
+        width: 200px;
+    }
+    #owl-demo2 .owl-controls .owl-buttons div.owl-prev{
+        left: -120px;
+    }
+    #owl-demo2 .owl-controls .owl-buttons div.owl-next{
+        right: -120px;
+    }
+    header .title.blog{
+        width: 200px;
+        height: 27px;
+        padding-top: 74px;
+    }
+    .bcontainer{
+        width: 300px;
+    }
+    .blogcontent .bleft{
+        display: none;
+    }
+    .blogcontent .bright{
+        width: 300px !important;
+        overflow: auto !important;
+    }
+    .blogcontent .bright .jspContainer,.blogcontent .bright .jspContainer .jspPane{
+        width: 300px !important;
+    }
+    .bright .bimage,.bright .bartist,.bright .bcontent{
+        width: 300px;
+    }
+    .bright .bimage img{
+        max-width: 100%;
+        height: auto;
+    } 
+    .ccontainer,.fcontainer{
+        width: 300px;
+    }
+    .contact-body-left{
+        width: 300px;
+    }
+    .contact-form{
+        width: 280px;
+        padding-bottom: 100px;
+    }
+    .contact-form input[type="text"],.contact-form input[type="email"]{
+        width: 200px;
+    }
+    .contact-form textarea{
+        width: 200px;
+    }
+    .contact-form input[type=submit]{
+        float: none;
+    }
+    .contact-body-right{
+        display: none;
+    }
+    .fcontainer .content .heading h4{
+        font-size: 12px;
     }
 }
