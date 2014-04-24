@@ -1460,7 +1460,7 @@ left: 137px;
     border-top: 1px solid #1f1f24;
 }
 .blogcontent .bleft {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 560px;
     height: 90%;
     float: left;
@@ -1474,9 +1474,28 @@ left: 137px;
     margin-left: 30px;
     //margin-top: 12px;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 .bleft .blogimg:nth-child(3n-2){
     margin-left: 12px;
+}
+/* Let's get this party started */
+.fcontainer .container::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+.fcontainer .container::-webkit-scrollbar-track {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #cecece;
+}
+
+/* Handle */
+.fcontainer .container::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #828282;
 }
 .bleft .blogimg img {
     width: 162px;
@@ -1490,7 +1509,7 @@ left: 137px;
     padding: 0;
 }
 .blogcontent .bright {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 612px;
     height: 90%;
     float: left;
@@ -1508,6 +1527,7 @@ left: 137px;
     margin: 0;
     padding-left: 20px;
     line-height: 35px;
+    margin-bottom: 10px;
 }
 .bright .bimage {
     width: 580px;
@@ -1920,7 +1940,7 @@ left: 137px;
     font-size:12px;
     letter-spacing:1px;
     text-align: left;
-    margin-left: 0px;
+    margin-left: 20px;
     color: #000;
 }
 
