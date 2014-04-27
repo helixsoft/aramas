@@ -19,7 +19,8 @@
     <div class="title home">
       <h1><?php echo ot_get_option( 'homepage_title' );?></h1>
       <p><?php echo ot_get_option( 'homepage_subtitle' );?></p>
-    </div>	
+    </div>
+    <div class="theme"><span><a href="<?php echo site_url()?>">EN</a></span> / <span><a href="http://ar.mizalabs.com">عربي</a></span></div>	
 		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ,'container' => 'nav') ); ?>
-	</div>
+  </div>
 </header>

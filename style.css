@@ -74,7 +74,7 @@ header .container1 .logo {
 }
 header .title {
     margin: 0 auto;
-    width: 600px;
+    width: 540px;
     height: 57px;
     float: left;
     padding-top: 57px;
@@ -82,7 +82,7 @@ header .title {
 }
 header .title.blog {
     margin: 0 auto;
-    width: 600px;
+    width: 540px;
     height: 57px;
     float: left;
     padding-top: 43px;
@@ -90,14 +90,14 @@ header .title.blog {
 }
 header .title.home {
     margin: 0 auto;
-    width: 600px;
+    width: 540px;
     height: 100px;
     float: left;
     padding-top: 20px;
     padding-left: 20px;
 }
 header .title h1 {
-    font-size: 45px;
+    font-size: 44px;
     margin: 0;
     padding: 0;
 }
@@ -783,7 +783,7 @@ input[type=date], input[type=datetime-local], input[type=datetime], input[type=e
     margin: 0 auto;
     width: 200px;
     height: 183px;
-    background: url(images/scan.png) center no-repeat;
+    background: url(images/scan_EN.jpg) center no-repeat;
     border-top: 1px solid #1f1f24;
 }
 footer {
@@ -1960,6 +1960,42 @@ textarea:focus{
     }
 }
 */
+.theme{
+    float: right;
+    margin-top: 15px;
+    margin-left: 28px;
+    font-weight: normal;
+    font-family: 'elham';
+    font-size: 20px;
+}
+.theme span:first-child{
+    font-size: 14px;
+}
+.theme span:last-child{
+    font-size: 14px;
+}
+.theme span:last-child{
+    text-decoration: none;
+font-family: 'elham';
+margin-top: -1px;
+line-height: 1;
+position: relative;
+top: -3px;
+color: #1f1f24;
+}
+.theme span:first-child a{
+text-decoration: none;
+color: #1f1f24;
+font-weight: bold;
+}
+.theme span:last-child a{
+text-decoration: none;
+font-size: 20px;
+color: #1f1f24;
+}
+.theme span a:hover{
+color: #9a8e55;
+}
 @media screen and (min-width: 1024px) and (max-width: 1200px){
     header .container1{
         width: 1000px;
