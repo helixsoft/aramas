@@ -64,6 +64,8 @@ function aramas_scripts_styles() {
 	wp_deregister_script('jquery');
 	wp_register_script('jquery', "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js", false, true);
 	wp_enqueue_script('jquery');
+	wp_enqueue_script( 'modanizer', get_template_directory_uri() . '/js/modernizr.custom.js', null, false, true );
+	wp_enqueue_script( 'menu', get_template_directory_uri() . '/js/jquery.dlmenu.js', array( 'jquery' ), false, true );
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), false, true );
 	
 }

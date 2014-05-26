@@ -19,8 +19,27 @@
     <div class="title">
       <h1><?php echo ot_get_option( 'aboutus_heading' );?></h1>
     </div>
-		<div class="theme"><span><a href="<?php echo site_url()?>">EN</a></span> / <span><a href="http://ar.mizalabs.com">عربي</a></span></div>
+		<div class="theme"><span><a href="<?php echo site_url()?>" style="color:#9a8e55;font-weight:bold;">EN</a></span> / <span><a href="<?php echo'http://'.$_SERVER['SERVER_NAME']?>">AR</a></span></div>
     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ,'container' => 'nav') ); ?>
-	   
+	   <div id="dl-menu" class="dl-menuwrapper">
+      <button class="dl-trigger">Open Menu</button>
+      <ul class="dl-menu">
+        <li>
+          <a href="<?php echo site_url()?>">Home</a>
+        </li>
+        <li>
+          <a href="<?php echo site_url()?>/about_us">About Us</a>
+        </li>
+        <li>
+          <a href="<?php echo site_url()?>/services">Services</a>
+        </li>
+        <li>
+          <a href="<?php echo site_url()?>/partners/">Partners</a>
+        </li>
+        <li>
+          <a href="<?php echo site_url()?>/blog">blog</a>
+        </li>
+      </ul>
+    </div><!-- /dl-menuwrapper -->
   </div>
 </header>

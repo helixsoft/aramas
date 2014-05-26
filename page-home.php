@@ -72,7 +72,7 @@ get_header('headername');
 			              ?>
 			        <li class="slide">  
 			          <h1><a href="<?php echo site_url('/faqs/')?>" style="text-decoration:none;color:#111;"><?php the_title();?></a></h1>
-			          <p><?php the_excerpt();?></p>
+			          <p><a href="<?php echo site_url('/faqs/')?>" style="text-decoration:none;color:#111;"><?php the_excerpt();?></a></p>
 			        </li>
 			        <?php
 			              endwhile;
@@ -161,10 +161,10 @@ get_header('headername');
 			              while ($wp_query->have_posts()) : $wp_query->the_post();
 			              ?>
 				<li class="slide">
-						<?php echo get_the_post_thumbnail($post->ID, 'full-size'); ?>	
+						<a href="<?php echo site_url('/blog/')?>" ><?php echo get_the_post_thumbnail($post->ID, 'full-size'); ?></a>	
 						<div class="po">
 						<h2><a href="<?php echo site_url('/blog/')?>" style="text-decoration:none;color:#111;font-size:20px;"><?php echo get_the_title();?></a></h2>
-						<p><?php the_excerpt();?></p>
+						<p><a href="<?php echo site_url('/blog/')?>" style="text-decoration:none;color:#111;"><?php the_excerpt();?></a></p>
 						</div>
 					</li>
 				 <?php

@@ -6,6 +6,7 @@
 
 get_header('service'); ?>
 <div class="fcontainer clearfix">
+		<div class="gap"></div>
 		<div class="container">
 			<div class="content faq">
 							<?php $wp_query_faq = new WP_Query(); ?>
